@@ -1,0 +1,172 @@
+/* https://images.pexels.com/photos/1306791/pexels-photo-1306791.jpeg */
+*{
+    padding: 0;
+    margin: 0;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: red;
+    background-color: rgba(199, 8, 8, 0.384);
+}
+nav h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+}
+a{
+    margin-right: 1rem;
+    font-size: 1.6rem;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    color: red;
+}
+#hero{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://images.pexels.com/photos/1306791/pexels-photo-1306791.jpeg);
+    background-size: cover;
+    background-position: center;
+}       
+#hero h1{
+    font-size: 4.7rem;
+    color:antiquewhite;
+    padding: 1rem;
+    background-color:rgba(63, 3, 3, 0.582);
+    border-radius: 0.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    text-shadow: 0.5rem 0.5rem 0.5rem;
+}
+#about{
+    height: 100vh;
+    display: flex;
+}
+
+#about .left,.right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.left img{
+    width: 50%;
+    border-radius: 0.6rem;
+    transition: 1.5sec ease-in;
+    box-shadow: 0.5rem 0.5rem 0.5rem #ff0000;
+}
+.right h1{
+    color:aliceblue;
+    text-transform: capitalize;
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 0.2rem;
+}
+.right p{
+font-size: 1.6rem;
+padding: 1rem;
+font-family: 'Times New Roman', Times, serif;
+color:aliceblue;
+}
+#whatwedo{
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+}
+.card{
+    width: 20rem;
+    padding: 1rem;
+    background-color: rgba(243, 24, 24, 0.377);
+    border-radius: 0.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: aliceblue;
+}
+.card img{
+    width: 100%;
+}
+#contact{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color:rgba(116, 5, 5, 0.473);
+}
+h1{
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    color: #ff0000;
+    padding: 1.5rem;
+}
+form{
+    width: 20rem;
+    background-color:rgba(116, 5, 5, 0.473);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+}
+input,textarea{
+    padding: 1rem 3rem;
+    transition: 2s ease-in;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0.5rem 1rem;
+    background-color: transparent;
+    color: black;
+    border: 1px solid #rgb(0,0,0);
+}
+input:focus{
+    outline: none;
+}
+textarea:focus{
+    outline: none; 
+}
+.btn:hover{
+    background-color: #070000;
+    border: none;
+}
+@media screen and (max-width:425px) {
+    nav .right{
+        display: none;
+    }
+    nav h1{
+        font-size: 1.3rem;
+    }
+    #hero{
+        height: 100%;
+        flex-direction: column;
+    }
+    #about .left,.right{
+        width: 100%;
+    }
+    #whatwedo{
+        height: 100%;
+    }
+    contact{
+        height: 100%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #contact{
+        height: 100%;
+    }
+    #whatwedo{
+        height: 100%;
+    }
+}
